@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="vi" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiếng Vọng Của Những Ngày Qua</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+  <style>
+    .font-headline { font-family: 'Playfair Display', Georgia, serif; }
+    .font-body { font-family: 'Source Serif 4', Georgia, serif; }
+    
+    .newspaper-columns {
+      column-count: 2;
+      column-gap: 2rem;
+      column-rule: 1px solid #d8b4e2;
+    }
+    
+    @media (max-width: 768px) {
+      .newspaper-columns {
+        column-count: 1;
+      }
+    }
+    
+    .drop-cap::first-letter {
+      float: left;
+      font-size: 4rem;
+      line-height: 0.8;
+      padding-right: 0.5rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .ornament::before,
+    .ornament::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #a855a0, transparent);
+    }
+    
+    .nav-item {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-item::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #7c3aed;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    .nav-item:hover::after,
+    .nav-item.active::after {
+      width: 100%;
+    }
+    
+    .page-section {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    .page-section.active {
+      display: block;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .actor-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .actor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+    }
+    
+    .quote-box {
+      position: relative;
+      padding: 2rem;
+    }
+    
+    .quote-box::before {
+      content: '"';
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      font-size: 5rem;
+      line-height: 1;
+      font-family: 'Playfair Display', serif;
+      opacity: 0.15;
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede4f7 100%);"><!-- Header -->
+   <header class="border-b-4 border-double" style="border-color: #a855a0;">
+    <div class="max-w-6xl mx-auto px-4 py-6"><!-- Masthead -->
+     <div class="text-center mb-6">
+      <p class="text-sm tracking-[0.3em] uppercase mb-2" style="color: #7c3aed;">Số đặc biệt • 2025-2026</p>
+      <h1 id="main-title" class="font-headline text-4xl md:text-6xl font-bold mb-2" style="color: #581c87;">Tiếng Vọng Của Những Ngày Qua</h1>
+      <p id="tagline" class="font-headline italic text-lg" style="color: #9333ea;">Một hành trình chạm đến trái tim</p>
+      <div class="ornament mt-4"><span style="color: #a855a0;">✦</span>
+      </div>
+     </div><!-- Navigation -->
+     <nav class="flex justify-center gap-8 text-sm uppercase tracking-wider"><button class="nav-item active" data-page="home" style="color: #6b21a8;">Trang Chủ</button> <button class="nav-item" data-page="actors" style="color: #6b21a8;">Diễn Viên</button> <button class="nav-item" data-page="script" style="color: #6b21a8;">Kịch Bản</button> <button class="nav-item" data-page="meaning" style="color: #6b21a8;">Ý Nghĩa</button>
+     </nav>
+    </div>
+   </header><!-- Main Content -->
+   <main class="max-w-6xl mx-auto px-4 py-8"><!-- Trang Chủ -->
+    <section id="page-home" class="page-section active">
+     <div class="grid md:grid-cols-3 gap-8"><!-- Main Article -->
+      <article class="md:col-span-2">
+       <div class="mb-6 p-6 rounded-lg" style="background: linear-gradient(135deg, #f3e8ff, #ede9fe);">
+        <h2 class="font-headline text-3xl font-bold mb-4" style="color: #581c87;">Khi ký ức trở thành tiếng nói</h2>
+        <div class="w-full h-48 rounded-lg flex items-center justify-center mb-4" style="background: linear-gradient(45deg, #c084fc, #a855f7, #9333ea);">
+         <div class="text-center text-white">
+          <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg>
+          <p class="font-headline italic">Sân khấu kịch nghệ</p>
+         </div>
+        </div>
+        <p class="drop-cap leading-relaxed text-lg" style="color: #3b0764;">Trong không gian tĩnh lặng của sân khấu, những mảnh ký ức dần hiện lên qua từng lời thoại, từng ánh mắt. "Tiếng Vọng Của Những Ngày Qua" không chỉ là một vở diễn - đó là cuộc hành trình xuyên thời gian, nơi quá khứ và hiện tại đan xen, tạo nên bức tranh cảm xúc sâu lắng về tình người, về những điều đã qua nhưng chưa bao giờ thực sự rời đi.</p>
+       </div>
+       <div class="newspaper-columns">
+        <p class="mb-4" style="color: #4a044e;">Vở diễn được dàn dựng công phu bởi tập thể học sinh lớp 11D2, với sự nhiệt huyết và tâm huyết của tuổi trẻ. Mỗi nhân vật, mỗi phân cảnh đều được chăm chút kỹ lưỡng để mang đến cho khán giả những khoảnh khắc đáng nhớ.</p>
+        <p class="mb-4" style="color: #4a044e;">Câu chuyện xoay quanh những mảnh ghép ký ức của nhân vật chính - người đang đứng trước ngưỡng cửa quan trọng của cuộc đời. Qua từng hồi tưởng, khán giả sẽ được sống lại những kỷ niệm, những bài học, và cả những nỗi đau đã định hình nên con người hiện tại.</p>
+        <p class="mb-4" style="color: #4a044e;">Với sự kết hợp hài hòa giữa âm nhạc, ánh sáng và diễn xuất, "Tiếng Vọng Của Những Ngày Qua" hứa hẹn sẽ chạm đến trái tim của mọi khán giả, khiến họ phải suy ngẫm về những ngày tháng đã qua trong chính cuộc đời mình.</p>
+       </div>
+      </article><!-- Sidebar -->
+      <aside class="space-y-6">
+       <div class="p-5 rounded-lg border-l-4" style="background: #faf5ff; border-color: #a855f7;">
+        <h3 class="font-headline font-bold mb-3" style="color: #7c3aed;">📅 Thông tin sự kiện</h3>
+        <ul class="space-y-2 text-sm" style="color: #581c87;">
+         <li><strong>Thời gian:</strong> Năm học 2025-2026</li>
+         <li><strong>Địa điểm:</strong> Hội trường trường</li>
+         <li><strong>Thời lượng:</strong> 45 phút</li>
+         <li><strong>Đối tượng:</strong> Mọi lứa tuổi</li>
+        </ul>
+       </div>
+       <div class="quote-box rounded-lg" style="background: linear-gradient(135deg, #ede9fe, #ddd6fe);">
+        <blockquote class="font-headline italic text-lg" style="color: #5b21b6;">
+         Ký ức không bao giờ mất đi, chúng chỉ đang chờ được lắng nghe...
+        </blockquote><cite class="block text-right text-sm mt-2" style="color: #7c3aed;">— Trích vở diễn</cite>
+       </div>
+       <div class="p-5 rounded-lg" style="background: #f5f3ff;">
+        <h3 class="font-headline font-bold mb-3" style="color: #7c3aed;">✨ Điểm nhấn</h3>
+        <ul class="space-y-2 text-sm" style="color: #581c87;">
+         <li>• Kịch bản nguyên gốc</li>
+         <li>• Âm nhạc sáng tác riêng</li>
+         <li>• Thiết kế sân khấu độc đáo</li>
+         <li>• Thông điệp nhân văn sâu sắc</li>
+        </ul>
+       </div>
+      </aside>
+     </div>
+    </section><!-- Diễn Viên -->
+    <section id="page-actors" class="page-section">
+     <div class="text-center mb-8">
+      <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Đội ngũ diễn viên</h2>
+      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      </div>
+      <p class="mt-4" style="color: #6b21a8;">Những gương mặt tài năng đứng sau vở diễn</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-6">
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c084fc, #a855f7);"><span class="text-4xl">👤</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật chính</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người kể chuyện</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Dẫn dắt khán giả qua từng mảnh ký ức, kết nối quá khứ với hiện tại.</p>
+      </div>
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #e879f9, #d946ef);"><span class="text-4xl">👤</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 1</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người bạn thân</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Đại diện cho tình bạn thuần khiết và những kỷ niệm tuổi học trò.</p>
+      </div>
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);"><span class="text-4xl">👤</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 2</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người thầy/cô</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Hình tượng người dẫn đường, truyền cảm hứng và bài học cuộc sống.</p>
+      </div>
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #f0abfc, #e879f9);"><span class="text-4xl">👤</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 3</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người thân</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Tình cảm gia đình - nền tảng vững chắc cho mọi hành trình.</p>
+      </div>
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c4b5fd, #a78bfa);"><span class="text-4xl">👥</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Đội hình phụ trợ</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Âm thanh, ánh sáng, hậu đài</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Những người hùng thầm lặng đảm bảo mọi thứ diễn ra hoàn hảo.</p>
+      </div>
+      <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #ddd6fe, #c4b5fd);"><span class="text-4xl">🎬</span>
+       </div>
+       <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Đạo diễn</h3>
+       <p class="text-sm mt-1" style="color: #9333ea;">Chỉ đạo nghệ thuật</p>
+       <p class="text-sm mt-3" style="color: #6b21a8;">Người chèo lái con thuyền nghệ thuật, định hình tầm nhìn của vở diễn.</p>
+      </div>
+     </div>
+     <div class="mt-8 p-6 rounded-lg text-center" style="background: linear-gradient(135deg, #faf5ff, #f3e8ff);">
+      <p class="font-headline italic" style="color: #7c3aed;">"Mỗi vai diễn là một phần của chúng tôi, mỗi câu thoại là tiếng lòng của tuổi trẻ."</p>
+      <p class="text-sm mt-2" style="color: #9333ea;">— Tập thể lớp 11D2</p>
+     </div>
+    </section><!-- Kịch Bản -->
+    <section id="page-script" class="page-section">
+     <div class="text-center mb-8">
+      <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Kịch bản vở diễn</h2>
+      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      </div>
+     </div>
+     <div class="max-w-4xl mx-auto"><!-- Hồi 1 -->
+      <div class="mb-8 p-6 rounded-lg" style="background: white; border-left: 4px solid #a855f7;">
+       <h3 class="font-headline text-xl font-bold mb-3" style="color: #7c3aed;">Hồi 1: Khởi đầu</h3>
+       <p class="mb-3" style="color: #581c87;"><em>Ánh đèn dần sáng, sân khấu hiện ra hình ảnh một căn phòng nhỏ. Nhân vật chính ngồi trước cuốn album ảnh cũ...</em></p>
+       <p class="mb-3" style="color: #4a044e;">Vở diễn mở đầu bằng khung cảnh yên bình nhưng đầy ắp hoài niệm. Người xem được đưa vào không gian của ký ức, nơi những trang sách của cuộc đời đang dần được lật giở.</p>
+       <div class="p-4 rounded italic" style="background: #faf5ff; color: #6b21a8;">
+        "Những bức ảnh này... chúng không chỉ là hình ảnh. Chúng là những khoảnh khắc tôi từng sống, từng yêu, từng đau..."
+       </div>
+      </div><!-- Hồi 2 -->
+      <div class="mb-8 p-6 rounded-lg" style="background: white; border-left: 4px solid #c084fc;">
+       <h3 class="font-headline text-xl font-bold mb-3" style="color: #7c3aed;">Hồi 2: Hồi ức</h3>
+       <p class="mb-3" style="color: #581c87;"><em>Sân khấu chuyển cảnh - những mảnh ký ức dần hiện lên như những thước phim quay chậm...</em></p>
+       <p class="mb-3" style="color: #4a044e;">Đây là phần cao trào của vở diễn, nơi các nhân vật phụ xuất hiện, kể những câu chuyện đan xen giữa vui buồn, giữa thành công và thất bại, giữa gặp gỡ và chia ly.</p>
+       <div class="p-4 rounded italic" style="background: #faf5ff; color: #6b21a8;">
+        "Thời gian trôi đi, nhưng có những điều mãi mãi ở lại trong tim ta..."
+       </div>
+      </div><!-- Hồi 3 -->
+      <div class="mb-8 p-6 rounded-lg" style="background: white; border-left: 4px solid #e879f9;">
+       <h3 class="font-headline text-xl font-bold mb-3" style="color: #7c3aed;">Hồi 3: Kết nối</h3>
+       <p class="mb-3" style="color: #581c87;"><em>Ánh sáng hòa quyện, quá khứ và hiện tại gặp nhau trong khoảnh khắc đặc biệt...</em></p>
+       <p class="mb-3" style="color: #4a044e;">Nhân vật chính nhận ra rằng những ký ức không phải gánh nặng, mà là hành trang quý giá. Mỗi trải nghiệm, dù vui hay buồn, đều góp phần tạo nên con người hôm nay.</p>
+       <div class="p-4 rounded italic" style="background: #faf5ff; color: #6b21a8;">
+        "Tôi không chạy trốn quá khứ nữa. Tôi ôm lấy nó, như ôm lấy chính mình..."
+       </div>
+      </div><!-- Hồi kết -->
+      <div class="p-6 rounded-lg" style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); border: 2px solid #c084fc;">
+       <h3 class="font-headline text-xl font-bold mb-3 text-center" style="color: #7c3aed;">Hồi kết: Tiếng vọng</h3>
+       <p class="text-center mb-3" style="color: #581c87;"><em>Tất cả nhân vật cùng xuất hiện, hòa giọng trong bản nhạc kết...</em></p>
+       <p class="text-center" style="color: #4a044e;">Vở diễn khép lại bằng thông điệp về sự chấp nhận, về tình yêu thương và về niềm tin vào tương lai. Tiếng vọng của những ngày qua không còn là nỗi ám ảnh, mà trở thành nguồn sức mạnh.</p>
+      </div>
+     </div>
+    </section><!-- Ý Nghĩa -->
+    <section id="page-meaning" class="page-section">
+     <div class="text-center mb-8">
+      <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Ý nghĩa vở diễn</h2>
+      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      </div>
+     </div>
+     <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+       <div class="p-6 rounded-xl" style="background: white; box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);">
+        <div class="text-4xl mb-4">
+         💜
+        </div>
+        <h3 class="font-headline font-bold text-lg mb-2" style="color: #7c3aed;">Về ký ức</h3>
+        <p style="color: #581c87;">Vở diễn nhắc nhở chúng ta rằng ký ức là phần quan trọng của con người. Đừng cố quên đi những gì đã qua, hãy học cách sống chung với nó và trưởng thành từ đó.</p>
+       </div>
+       <div class="p-6 rounded-xl" style="background: white; box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);">
+        <div class="text-4xl mb-4">
+         🌟
+        </div>
+        <h3 class="font-headline font-bold text-lg mb-2" style="color: #7c3aed;">Về tuổi trẻ</h3>
+        <p style="color: #581c87;">Tuổi học trò với những mối quan hệ, những bài học, những khoảnh khắc - tất cả đều là hành trang quý giá cho hành trình phía trước.</p>
+       </div>
+       <div class="p-6 rounded-xl" style="background: white; box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);">
+        <div class="text-4xl mb-4">
+         🤝
+        </div>
+        <h3 class="font-headline font-bold text-lg mb-2" style="color: #7c3aed;">Về tình người</h3>
+        <p style="color: #581c87;">Những mối quan hệ - bạn bè, thầy cô, gia đình - là sợi dây kết nối chúng ta với thế giới. Hãy trân trọng từng người bên cạnh.</p>
+       </div>
+       <div class="p-6 rounded-xl" style="background: white; box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);">
+        <div class="text-4xl mb-4">
+         🌈
+        </div>
+        <h3 class="font-headline font-bold text-lg mb-2" style="color: #7c3aed;">Về tương lai</h3>
+        <p style="color: #581c87;">Hiểu quá khứ để bước tới tương lai. Mỗi bước đi hôm nay đều được xây dựng từ những gì chúng ta đã trải qua hôm qua.</p>
+       </div>
+      </div>
+      <div class="p-8 rounded-xl text-center" style="background: linear-gradient(135deg, #ede9fe, #ddd6fe);">
+       <h3 class="font-headline text-2xl font-bold mb-4" style="color: #5b21b6;">Thông điệp gửi đến khán giả</h3>
+       <p class="text-lg leading-relaxed mb-4" style="color: #581c87;">"Tiếng Vọng Của Những Ngày Qua" không chỉ là một vở kịch - đó là tấm gương để mỗi người tự soi chiếu vào chính mình. Hãy dành một khoảnh khắc để lắng nghe tiếng vọng trong lòng bạn. Có thể, bạn sẽ tìm thấy điều gì đó mà bạn đã lãng quên từ lâu.</p>
+       <div class="font-headline italic text-xl" style="color: #7c3aed;">
+        "Hãy để ký ức trở thành ánh sáng dẫn lối, không phải bóng tối ngăn đường."
+       </div>
+      </div>
+      <div class="mt-8 text-center">
+       <p class="font-headline italic" style="color: #9333ea;">Cảm ơn bạn đã đồng hành cùng chúng tôi trong hành trình nghệ thuật này.</p>
+      </div>
+     </div>
+    </section>
+   </main><!-- Footer -->
+   <footer class="border-t-2" style="border-color: #e9d5ff; background: linear-gradient(135deg, #faf5ff, #f5f3ff);">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+     <div class="ornament mb-4"><span style="color: #a855a0;">✦</span>
+     </div>
+     <div class="space-y-2" style="color: #6b21a8;">
+      <p class="font-headline font-semibold">2025-2026</p>
+      <p id="footer-performance">Vở diễn được tiến hành bởi học sinh lớp <strong>11D2</strong></p>
+      <p id="footer-development">Phần mềm do học sinh lớp <strong>11A1</strong> thực hiện</p>
+     </div>
+     <div class="mt-4 text-sm" style="color: #9333ea;"><span class="font-headline italic">"Tiếng Vọng Của Những Ngày Qua"</span>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      play_title: 'Tiếng Vọng Của Những Ngày Qua',
+      tagline: 'Một hành trình chạm đến trái tim',
+      footer_class: '11D2',
+      footer_dev: '11A1',
+      background_color: '#faf5ff',
+      surface_color: '#ffffff',
+      text_color: '#581c87',
+      primary_action: '#7c3aed',
+      secondary_action: '#9333ea'
+    };
+    
+    // Navigation functionality
+    document.querySelectorAll('.nav-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update nav active state
+        document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Show corresponding page
+        const pageId = btn.dataset.page;
+        document.querySelectorAll('.page-section').forEach(section => {
+          section.classList.remove('active');
+        });
+        document.getElementById('page-' + pageId).classList.add('active');
+        
+        // Scroll to top
+        document.getElementById('app-wrapper').scrollTop = 0;
+      });
+    });
+    
+    // Element SDK initialization
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          // Update title
+          const titleEl = document.getElementById('main-title');
+          if (titleEl) {
+            titleEl.textContent = config.play_title || defaultConfig.play_title;
+            titleEl.style.color = config.text_color || defaultConfig.text_color;
+          }
+          
+          // Update tagline
+          const taglineEl = document.getElementById('tagline');
+          if (taglineEl) {
+            taglineEl.textContent = config.tagline || defaultConfig.tagline;
+            taglineEl.style.color = config.primary_action || defaultConfig.primary_action;
+          }
+          
+          // Update footer
+          const footerPerf = document.getElementById('footer-performance');
+          if (footerPerf) {
+            footerPerf.innerHTML = `Vở diễn được tiến hành bởi học sinh lớp <strong>${config.footer_class || defaultConfig.footer_class}</strong>`;
+          }
+          
+          const footerDev = document.getElementById('footer-development');
+          if (footerDev) {
+            footerDev.innerHTML = `Phần mềm do học sinh lớp <strong>${config.footer_dev || defaultConfig.footer_dev}</strong> thực hiện`;
+          }
+          
+          // Update background color
+          const wrapper = document.getElementById('app-wrapper');
+          if (wrapper) {
+            const bgColor = config.background_color || defaultConfig.background_color;
+            wrapper.style.background = `linear-gradient(135deg, ${bgColor} 0%, ${adjustColor(bgColor, -5)} 50%, ${adjustColor(bgColor, -10)} 100%)`;
+          }
+          
+          // Update nav items color
+          document.querySelectorAll('.nav-item').forEach(el => {
+            el.style.color = config.text_color || defaultConfig.text_color;
+          });
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+            },
+            {
+              get: () => config.surface_color || defaultConfig.surface_color,
+              set: (value) => { config.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+            },
+            {
+              get: () => config.primary_action || defaultConfig.primary_action,
+              set: (value) => { config.primary_action = value; window.elementSdk.setConfig({ primary_action: value }); }
+            },
+            {
+              get: () => config.secondary_action || defaultConfig.secondary_action,
+              set: (value) => { config.secondary_action = value; window.elementSdk.setConfig({ secondary_action: value }); }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || 'Playfair Display',
+            set: (value) => { config.font_family = value; window.elementSdk.setConfig({ font_family: value }); }
+          },
+          fontSizeable: {
+            get: () => config.font_size || 16,
+            set: (value) => { config.font_size = value; window.elementSdk.setConfig({ font_size: value }); }
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['play_title', config.play_title || defaultConfig.play_title],
+          ['tagline', config.tagline || defaultConfig.tagline],
+          ['footer_class', config.footer_class || defaultConfig.footer_class],
+          ['footer_dev', config.footer_dev || defaultConfig.footer_dev]
+        ])
+      });
+    }
+    
+    // Helper function to adjust color brightness
+    function adjustColor(hex, percent) {
+      const num = parseInt(hex.replace('#', ''), 16);
+      const amt = Math.round(2.55 * percent);
+      const R = (num >> 16) + amt;
+      const G = (num >> 8 & 0x00FF) + amt;
+      const B = (num & 0x0000FF) + amt;
+      return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+        (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+        (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d4e5c781672c7b2',t:'MTc3MjI2NTM0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
