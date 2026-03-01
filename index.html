@@ -113,29 +113,41 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full font-body">
-  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede4f7 100%);"><!-- Header -->
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 50%, #ede4f7 100%);">
+   <!-- Header -->
    <header class="border-b-4 border-double" style="border-color: #a855a0;">
-    <div class="max-w-6xl mx-auto px-4 py-6"><!-- Masthead -->
+    <div class="max-w-6xl mx-auto px-4 py-6">
+     <!-- Back Button -->
+     <div class="mb-4"><a href="https://ttnla1.github.io/trangchuvan/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg transition-all hover:shadow-md" style="background: #f3e8ff; color: #7c3aed;">
+       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+       </svg><span>Quay về trang chính</span> </a>
+     </div><!-- Masthead -->
      <div class="text-center mb-6">
       <p class="text-sm tracking-[0.3em] uppercase mb-2" style="color: #7c3aed;">Số đặc biệt • 2025-2026</p>
       <h1 id="main-title" class="font-headline text-4xl md:text-6xl font-bold mb-2" style="color: #581c87;">Tiếng Vọng Của Những Ngày Qua</h1>
       <p id="tagline" class="font-headline italic text-lg" style="color: #9333ea;">Một hành trình chạm đến trái tim</p>
-      <div class="ornament mt-4"><span style="color: #a855a0;">✦</span>
+      <div class="ornament mt-4">
+       <span style="color: #a855a0;">✦</span>
       </div>
      </div><!-- Navigation -->
-     <nav class="flex justify-center gap-8 text-sm uppercase tracking-wider"><button class="nav-item active" data-page="home" style="color: #6b21a8;">Trang Chủ</button> <button class="nav-item" data-page="actors" style="color: #6b21a8;">Diễn Viên</button> <button class="nav-item" data-page="script" style="color: #6b21a8;">Kịch Bản</button> <button class="nav-item" data-page="meaning" style="color: #6b21a8;">Ý Nghĩa</button>
+     <nav class="flex justify-center gap-8 text-sm uppercase tracking-wider">
+      <button class="nav-item active" data-page="home" style="color: #6b21a8;">Trang Chủ</button> <button class="nav-item" data-page="actors" style="color: #6b21a8;">Diễn Viên</button> <button class="nav-item" data-page="script" style="color: #6b21a8;">Kịch Bản</button> <button class="nav-item" data-page="meaning" style="color: #6b21a8;">Ý Nghĩa</button>
      </nav>
     </div>
    </header><!-- Main Content -->
-   <main class="max-w-6xl mx-auto px-4 py-8"><!-- Trang Chủ -->
+   <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Trang Chủ -->
     <section id="page-home" class="page-section active">
-     <div class="grid md:grid-cols-3 gap-8"><!-- Main Article -->
+     <div class="grid md:grid-cols-3 gap-8">
+      <!-- Main Article -->
       <article class="md:col-span-2">
        <div class="mb-6 p-6 rounded-lg" style="background: linear-gradient(135deg, #f3e8ff, #ede9fe);">
         <h2 class="font-headline text-3xl font-bold mb-4" style="color: #581c87;">Khi ký ức trở thành tiếng nói</h2>
         <div class="w-full h-48 rounded-lg flex items-center justify-center mb-4" style="background: linear-gradient(45deg, #c084fc, #a855f7, #9333ea);">
          <div class="text-center text-white">
-          <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="currentColor" viewbox="0 0 24 24">
+           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
           </svg>
           <p class="font-headline italic">Sân khấu kịch nghệ</p>
          </div>
@@ -178,48 +190,55 @@
     <section id="page-actors" class="page-section">
      <div class="text-center mb-8">
       <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Đội ngũ diễn viên</h2>
-      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      <div class="ornament">
+       <span style="color: #a855a0;">✦</span>
       </div>
       <p class="mt-4" style="color: #6b21a8;">Những gương mặt tài năng đứng sau vở diễn</p>
      </div>
      <div class="grid md:grid-cols-3 gap-6">
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c084fc, #a855f7);"><span class="text-4xl">👤</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c084fc, #a855f7);">
+        <span class="text-4xl">👤</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật chính</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người kể chuyện</p>
        <p class="text-sm mt-3" style="color: #6b21a8;">Dẫn dắt khán giả qua từng mảnh ký ức, kết nối quá khứ với hiện tại.</p>
       </div>
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #e879f9, #d946ef);"><span class="text-4xl">👤</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #e879f9, #d946ef);">
+        <span class="text-4xl">👤</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 1</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người bạn thân</p>
        <p class="text-sm mt-3" style="color: #6b21a8;">Đại diện cho tình bạn thuần khiết và những kỷ niệm tuổi học trò.</p>
       </div>
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);"><span class="text-4xl">👤</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);">
+        <span class="text-4xl">👤</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 2</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người thầy/cô</p>
        <p class="text-sm mt-3" style="color: #6b21a8;">Hình tượng người dẫn đường, truyền cảm hứng và bài học cuộc sống.</p>
       </div>
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #f0abfc, #e879f9);"><span class="text-4xl">👤</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #f0abfc, #e879f9);">
+        <span class="text-4xl">👤</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Nhân vật phụ 3</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Vai: Người thân</p>
        <p class="text-sm mt-3" style="color: #6b21a8;">Tình cảm gia đình - nền tảng vững chắc cho mọi hành trình.</p>
       </div>
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c4b5fd, #a78bfa);"><span class="text-4xl">👥</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #c4b5fd, #a78bfa);">
+        <span class="text-4xl">👥</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Đội hình phụ trợ</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Âm thanh, ánh sáng, hậu đài</p>
        <p class="text-sm mt-3" style="color: #6b21a8;">Những người hùng thầm lặng đảm bảo mọi thứ diễn ra hoàn hảo.</p>
       </div>
       <div class="actor-card p-6 rounded-xl text-center" style="background: white; border: 1px solid #e9d5ff;">
-       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #ddd6fe, #c4b5fd);"><span class="text-4xl">🎬</span>
+       <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #ddd6fe, #c4b5fd);">
+        <span class="text-4xl">🎬</span>
        </div>
        <h3 class="font-headline font-bold text-lg" style="color: #581c87;">Đạo diễn</h3>
        <p class="text-sm mt-1" style="color: #9333ea;">Chỉ đạo nghệ thuật</p>
@@ -234,10 +253,12 @@
     <section id="page-script" class="page-section">
      <div class="text-center mb-8">
       <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Kịch bản vở diễn</h2>
-      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      <div class="ornament">
+       <span style="color: #a855a0;">✦</span>
       </div>
      </div>
-     <div class="max-w-4xl mx-auto"><!-- Hồi 1 -->
+     <div class="max-w-4xl mx-auto">
+      <!-- Hồi 1 -->
       <div class="mb-8 p-6 rounded-lg" style="background: white; border-left: 4px solid #a855f7;">
        <h3 class="font-headline text-xl font-bold mb-3" style="color: #7c3aed;">Hồi 1: Khởi đầu</h3>
        <p class="mb-3" style="color: #581c87;"><em>Ánh đèn dần sáng, sân khấu hiện ra hình ảnh một căn phòng nhỏ. Nhân vật chính ngồi trước cuốn album ảnh cũ...</em></p>
@@ -272,7 +293,8 @@
     <section id="page-meaning" class="page-section">
      <div class="text-center mb-8">
       <h2 class="font-headline text-3xl font-bold mb-2" style="color: #581c87;">Ý nghĩa vở diễn</h2>
-      <div class="ornament"><span style="color: #a855a0;">✦</span>
+      <div class="ornament">
+       <span style="color: #a855a0;">✦</span>
       </div>
      </div>
      <div class="max-w-4xl mx-auto">
@@ -321,14 +343,16 @@
    </main><!-- Footer -->
    <footer class="border-t-2" style="border-color: #e9d5ff; background: linear-gradient(135deg, #faf5ff, #f5f3ff);">
     <div class="max-w-6xl mx-auto px-4 py-8 text-center">
-     <div class="ornament mb-4"><span style="color: #a855a0;">✦</span>
+     <div class="ornament mb-4">
+      <span style="color: #a855a0;">✦</span>
      </div>
      <div class="space-y-2" style="color: #6b21a8;">
       <p class="font-headline font-semibold">2025-2026</p>
       <p id="footer-performance">Vở diễn được tiến hành bởi học sinh lớp <strong>11D2</strong></p>
       <p id="footer-development">Phần mềm do học sinh lớp <strong>11A1</strong> thực hiện</p>
      </div>
-     <div class="mt-4 text-sm" style="color: #9333ea;"><span class="font-headline italic">"Tiếng Vọng Của Những Ngày Qua"</span>
+     <div class="mt-4 text-sm" style="color: #9333ea;">
+      <span class="font-headline italic">"Tiếng Vọng Của Những Ngày Qua"</span>
      </div>
     </div>
    </footer>
@@ -462,5 +486,5 @@
         (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d4e5c781672c7b2',t:'MTc3MjI2NTM0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d5865a916d9c7b2',t:'MTc3MjM3MDU3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
